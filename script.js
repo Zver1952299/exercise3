@@ -34,25 +34,48 @@
 
 // (num < 20) ? console.log('Error') : console.log('ok');
 
-const a = +prompt('Сколько пальцев на руке?', '');
+// const a = +prompt('Сколько пальцев на руке?', '');
 
-switch (a) {
-    case 1:
-        console.log('less');
-        break;
-    case 2:
-        console.log('мало');
-        break;
-    case 3:
-        console.log('мало');
-        break;
-    case 4:
-        console.log('мало');
-        break;
-    case 5:
-        console.log('верно');
-        break;
-    default:
-        console.log('много');
-        break;
+// switch (a) {
+//     case 1:
+//         console.log('less');
+//         break;
+//     case 2:
+//         console.log('мало');
+//         break;
+//     case 3:
+//         console.log('мало');
+//         break;
+//     case 4:
+//         console.log('мало');
+//         break;
+//     case 5:
+//         console.log('верно');
+//         break;
+//     default:
+//         console.log('много');
+//         break;
+// }
+
+// while (a <= 100) {
+//     console.log(a);
+//     a++;
+// }
+
+// let a = 40;
+
+// do {
+//     console.log(a);
+//     a++;
+// }
+// while (a <= 45);
+
+// let a = 5;
+
+for (let i = 1; i <= 10; i++) {
+    if (i == 6) {
+        // break;
+        continue;
+    }
+    console.log(i);
 }
