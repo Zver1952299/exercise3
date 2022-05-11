@@ -1,9 +1,35 @@
 "use strict";
 
-const arr = prompt('', '');
-const products = arr.split(', ');
-products.sort();
-console.log(products.join('; '));
+function copy(mainObj) {
+    const copyObj = {};
+
+    let key;
+    for (key in mainObj) {
+        copyObj[key] = mainObj[key];
+    }
+    return(copyObj);
+}
+
+const numbers = {
+    a: 5,
+    b: 2,
+    c: {
+        x:6,
+        z:3
+    }
+};
+
+const newObj = copy(numbers);
+newObj.b = 13;
+newObj.c.x = 13;
+console.log(newObj);
+console.log(numbers);
+
+
+// const arr = prompt('', '');
+// const products = arr.split(', ');
+// products.sort();
+// console.log(products.join('; '));
 
 // const arr = [1, 2, 3, 4, 6, 8];
 
